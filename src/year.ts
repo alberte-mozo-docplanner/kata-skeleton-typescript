@@ -1,2 +1,5 @@
 export class Year {
+    isLeap() {
+
+    }
 }
