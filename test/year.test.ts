@@ -1,13 +1,14 @@
 import { Year } from "../src/year";
 
 describe('leap year', (): void => {
-    it('isLeap returns a boolean response', () => {
-        const year: Year = new Year(1996);
-        const result = year.isLeap();
-        expect(typeof result).toBe('boolean');
-    });
+    function AssertRegularYear(expectedYear: number) {
+        const year: Year = new Year(expectedYear)
+        const result: boolean = year.isLeap();
+        expect(result).toBe(false);
+    }
 
-    it('Year constructor should accept a number', () => {
-        const year = new Year(2023)
+    it('Identifies regular years', () => {
+        AssertRegularYear(2023);
+        AssertRegularYear(2011);
     })
 });
