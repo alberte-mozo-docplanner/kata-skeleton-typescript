@@ -1,5 +1,5 @@
 export class Year {
-    isLeap() {
-
+    isLeap(): boolean {
+        return true;
     }
 }

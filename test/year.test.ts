@@ -1,11 +1,9 @@
 import {Year} from "../src/year";
 
 describe('leap year', (): void => {
-    it('is instantiable', () => {
-        new Year();
-    });
-    it('responds to messages asking if it is a leap year', () => {
+    it('isLeap returns a boolean response', () => {
         const year: Year = new Year();
-        year.isLeap();
+        const result = year.isLeap();
+        expect(typeof result).toBe('boolean');
     });
 });
