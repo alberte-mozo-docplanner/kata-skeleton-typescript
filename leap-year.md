@@ -5,9 +5,9 @@ Based on <https://www.codurance.com/katas/leap-year>.
 
 Implement a method that checks if a year is a leap year.
 
-[ ] A year is not a leap year if not divisible by 4 (e.g. 2023, 1111)
+[x] A year is not a leap year if not divisible by 4 (e.g. 2023, 1111)
 
-[ ] A year is a leap year if divisible by 4 (e.g. 2024, 2020)
+[x] A year is a leap year if divisible by 4 (e.g. 2024, 2020)
 
 [ ] A year is not a leap year if divisible by 100 (e.g. 1800, 1900)
 

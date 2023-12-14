@@ -11,4 +11,14 @@ describe('leap year', (): void => {
         AssertRegularYear(2023);
         AssertRegularYear(2011);
     })
+
+    it('Identifies leap years', () => {
+        const year: Year = new Year(2024)
+        const result: boolean = year.isLeap();
+        expect(result).toBe(true);
+
+        const year2: Year = new Year(2020)
+        const result2: boolean = year2.isLeap();
+        expect(result2).toBe(true);
+    })
 });
