@@ -21,4 +21,9 @@ describe('leap year', (): void => {
         const result2: boolean = year2.isLeap();
         expect(result2).toBe(true);
     })
+
+    it('Identifies century years', () => {
+        AssertRegularYear(1800);
+        AssertRegularYear(1900);
+    })
 });
